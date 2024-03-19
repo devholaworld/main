@@ -1,27 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>프로그래밍 블로그</title>
+    <title>반응형 웹 페이지</title>
     <style>
         body {
-            background-color: #f0f8ff;
-            color: #333;
+            margin: 0;
             font-family: 'Courier New', Courier, monospace;
-            padding: 15px;
         }
-        h1, h2, p {
-            margin-bottom: 15px;
+        .header {
+            text-align: center;
+            padding: 50px;
+            background-color: #f1f1f1;
         }
+        .content {
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
         @media screen and (max-width: 600px) {
-            body {
-                font-size: 18px;
+            .header, .content {
+                padding: 10px;
             }
+
+            table, th, td {
+                display: block;
+                width: 100%;
+            }
+            th, td {
+                border: none;
+                border-bottom: 1px solid #ddd;
+            }            
         }
+
+
+
+
     </style>
 </head>
 <body>
-    <h1>환영합니다! 이곳은 아이들을 위한 프로그래밍 블로그입니다.</h1>
-    <h2>오늘의 프로그래밍 팁:</h2>
-    <p>파이썬에서 리스트에 요소를 추가하려면 'append' 함수를 사용할 수 있습니다. 예를 들어, 'myList.append('apple')'은 'myList'라는 리스트에 'apple'을 추가합니다.</p>
+    <div class="header">
+        <h1>welcome</h1>
+        <p>이 페이지는 모든 기기에서 잘 보입니다.</p>
+    </div>
+    <div class="content">
+        <h2>제목</h2>
+        <p>이곳에 내용을 채워주세요.</p>
+
+        <table>
+            <tr>
+                <th>헤더 1</th>
+                <th>헤더 2</th>
+                <th>헤더 3</th>
+            </tr>
+            <tr>
+                <td>데이터 1</td>
+                <td>데이터 2</td>
+                <td>데이터 3</td>
+            </tr>
+            <!-- 추가 행을 여기에 넣으세요 -->
+        </table>
+
+        <h2>글목록</h2>
+        <ul>
+            <li>글 1</li>
+            <li>글 2</li>
+            <li>글 3</li>
+            <!-- 추가 항목을 여기에 넣으세요 -->
+        </ul>
+
+        <h2>링크</h2>
+        <p><a href="https://www.example.com">이곳</a>을 클릭하여 example.com으로 이동하세요.</p>        
+
+        <h2>이미지</h2>
+        <img src="이미지_URL" alt="설명">
+
+    </div>
 </body>
 </html>
